@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Xiu8Cache</string>
+
+
+    <string name="app_cache">AppCache</string>
+    <string name="type">类型</string>
+    <string name="input_type">输入类型</string>
+    <string name="string_type">String</string>
+    <string name="int_type">Integer</string>
+    <string name="long_type">Long</string>
+    <string name="float_type">Float</string>
+    <string name="boolean_type">Boolean</string>
+    <string name="save">保存</string>
+    <string name="remove_key">清理 Key</string>
+    <string name="clear_all">清理全部</string>
+
+    <string name="key">Key</string>
+    <string name="input_key">输入 key</string>
+    <string name="read">读取</string>
+    <string name="result">结果</string>
+
+
+</resources>

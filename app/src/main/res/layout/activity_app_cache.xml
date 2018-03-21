@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.xiu8.xiu8cache.ui.AppCacheActivity">
+
+
+        <Button
+            android:id="@+id/btn_cache_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:onClick="onCacheType"
+            android:padding="10dp"
+            android:text="@string/type"
+            android:visibility="gone" />
+
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_cache_type"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="left"-->
+        <!--android:hint="@string/input_type"-->
+        <!--android:padding="10dp" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:padding="10dp"
+                android:text="@string/string_type" />
+
+
+            <EditText
+                android:id="@+id/et_cache_string_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:hint="@string/input_type"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:padding="10dp"
+                android:text="@string/int_type" />
+
+
+            <EditText
+                android:id="@+id/et_cache_integer_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:hint="@string/input_type"
+                android:inputType="number"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:padding="10dp"
+                android:text="@string/long_type" />
+
+
+            <EditText
+                android:id="@+id/et_cache_long_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:hint="@string/input_type"
+                android:inputType="number"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:padding="10dp"
+                android:text="@string/float_type" />
+
+
+            <EditText
+                android:id="@+id/et_cache_float_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:hint="@string/input_type"
+                android:inputType="number"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:padding="10dp"
+                android:text="@string/boolean_type" />
+
+
+            <TextView
+                android:id="@+id/tv_cache_boolean_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:hint="@string/input_type"
+                android:onClick="onChoseBoolean"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="onSave"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btn_cache_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:onClick="onCacheKey"
+            android:text="@string/key" />
+
+
+        <TextView
+            android:id="@+id/tv_cache_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:hint="@string/result"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_cache_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:onClick="onRemove"
+            android:text="@string/remove_key" />
+
+
+        <Button
+            android:id="@+id/btn_cache_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:onClick="onClear"
+            android:text="@string/clear_all" />
+
+
+    </LinearLayout>
+</layout>

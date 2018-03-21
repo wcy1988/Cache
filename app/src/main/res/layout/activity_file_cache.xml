@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xiu8.xiu8cache.ui.FileCacheActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_cache_file_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="存储内容" />
+
+        <CheckBox
+            android:id="@+id/cb_cache_file_lru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否 Lru 存储" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="onCacheType"
+                android:text="存储类型" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="onCacheRemove"
+                android:text="清理 Key" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="onCacheClear"
+                android:text="清理全部" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="getFileCache"
+            android:text="取出" />
+
+        <TextView
+            android:id="@+id/tv_cache_file_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="结果" />
+
+        <ImageView
+            android:id="@+id/imv_cache_file_result"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            tools:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+</layout>
+
